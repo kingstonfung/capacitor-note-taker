@@ -1,0 +1,10 @@
+.DS_Store
+.pnpm-store
+node_modules
+apps/notetaker/.tanstack
+apps/notetaker/build
+.gradle
+.idea
+apps/notetaker/android/app/build
+apps/notetaker/dist
+apps/notetaker/coverage

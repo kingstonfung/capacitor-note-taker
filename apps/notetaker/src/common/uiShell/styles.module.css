@@ -1,0 +1,33 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+.main {
+  flex: 1;
+  padding: 2rem 1.5rem;
+}
+
+.footer {
+  padding: 1.5rem;
+  color: var(--color-text-muted);
+  text-align: center;
+  font-size: var(--font-size-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.deleteAllLink {
+  color: var(--color-error);
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity var(--transition-default);
+  font-size: var(--font-size-label);
+}
+
+.deleteAllLink:hover {
+  opacity: 0.75;
+}

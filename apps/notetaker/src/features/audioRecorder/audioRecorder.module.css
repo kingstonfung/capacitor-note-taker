@@ -1,0 +1,130 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.label {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-text-strong);
+}
+
+.recorder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: var(--padding-input);
+  border-radius: var(--radius-button);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-text-muted);
+  flex-shrink: 0;
+  transition: background var(--transition-default);
+}
+
+.dotRecording {
+  background: var(--color-error);
+  animation: pulse 1.2s ease-in-out infinite;
+}
+
+.statusTextRecording {
+  color: var(--color-error);
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+.controls {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.btnRecord,
+.btnStop,
+.btnDelete {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: var(--padding-button);
+  border-radius: var(--radius-button);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btnRecord,
+.btnStop {
+  border: none;
+  transition:
+    background var(--transition-default),
+    opacity var(--transition-default);
+}
+
+.btnRecord img,
+.btnStop img {
+  filter: brightness(0) invert(1);
+}
+
+.btnRecord {
+  background: var(--color-error);
+  color: var(--color-surface);
+}
+
+.btnRecord:hover:not(:disabled) {
+  opacity: 0.85;
+}
+
+.btnStop {
+  background: var(--color-warning);
+  color: var(--color-surface);
+}
+
+.btnStop:hover:not(:disabled) {
+  opacity: 0.85;
+}
+
+.btnRecord:disabled,
+.btnStop:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.btnDelete {
+  border: none;
+  background: var(--color-text-strong);
+  color: var(--color-surface);
+  transition: opacity var(--transition-default);
+}
+
+.btnDelete img {
+  filter: brightness(0) invert(1);
+}
+
+.btnDelete:hover {
+  opacity: 0.8;
+}

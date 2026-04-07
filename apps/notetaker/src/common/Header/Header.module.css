@@ -1,0 +1,70 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: calc(env(safe-area-inset-top) + 1rem) 1.5rem 0 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--color-surface);
+}
+
+.headerNative {
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.appName {
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: inherit;
+}
+
+.backButton {
+  display: flex;
+  align-items: center;
+  gap: 0.125rem;
+  background: none;
+  border: none;
+  padding: 0.25rem 0.25rem 0.25rem 0;
+  cursor: pointer;
+  color: inherit;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: opacity 0.15s ease;
+}
+
+.backButton:hover {
+  opacity: 0.6;
+}
+
+.newNoteButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  padding: 0.25rem;
+  cursor: pointer;
+  color: inherit;
+  border-radius: 6px;
+  transition: opacity 0.15s ease;
+}
+
+.newNoteButton:hover {
+  opacity: 0.6;
+}
+
+.logo {
+  height: 32px;
+  width: auto;
+}
+
+.cornerActionsWrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}

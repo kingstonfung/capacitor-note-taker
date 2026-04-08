@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0a647523-00be-4b7d-a9f8-bbdb582b31ae" alt="App screenshot" width="128" />
+</p>
+
 ### Quick Test Guide
 - **Web**: https://notetaker.kfung.dev/
 - **Mobile builds**: https://drive.google.com/file/d/165tnxlZbBVrrBrFSWOwFZZbPmolDdSEg/view

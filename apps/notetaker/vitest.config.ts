@@ -10,6 +10,7 @@ export default defineConfig({
     setupFiles: ["./src/testSetups/viTestSetup.ts"],
     coverage: {
       exclude: [
+        "build/**",
         "dist/**",
         "dist/assets/**",
         "**/dist/**",
@@ -28,6 +29,7 @@ export default defineConfig({
         "**/android/**",
         "**/ios/**",
         "**/capacitor.config.ts",
+        "**/types/*.ts"
       ],
     },
   },

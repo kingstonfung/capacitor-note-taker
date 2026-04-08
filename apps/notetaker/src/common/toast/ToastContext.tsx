@@ -1,8 +1,7 @@
-import { createContext, useContext, useEffect, useState } from "react"
 import type { ReactNode } from "react"
+import { createContext, useContext, useEffect, useState } from "react"
 import { Toast } from "@/components/Toast/Toast"
-
-const PENDING_TOAST_KEY = "pendingToast"
+import { PENDING_TOAST_KEY } from "@/constants/pendingToastKey"
 
 type ToastState = {
   message: string

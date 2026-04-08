@@ -6,7 +6,7 @@ import screenRecordIcon from "@/assets/icons/screen_record.svg"
 import stopCircleIcon from "@/assets/icons/stop_circle.svg"
 import deleteIcon from "@/assets/icons/delete.svg"
 
-export interface AudioRecorderHandle {
+export type AudioRecorderHandle = {
   isRecording: boolean
   stopAndAwait: () => Promise<void>
 }

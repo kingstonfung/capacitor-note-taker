@@ -6,7 +6,7 @@ import { useNavigate } from "@tanstack/react-router"
 import { NotesSchema } from "@/schemas/notes"
 import { useNotesFormSubmit } from "./hooks/useNotesFormSubmit"
 import type { Notes, NotesInput } from "@/schemas/notes"
-import { getCurrentTimestamp } from "@/common/timestamp"
+import { getCurrentTimestamp } from "@/common/timestamp/timestamp"
 
 import { AudioRecorder } from "@/features/audioRecorder"
 import type { AudioRecorderHandle } from "@/features/audioRecorder"

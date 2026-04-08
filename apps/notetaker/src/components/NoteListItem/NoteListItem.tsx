@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router"
-import type { Notes } from "@/schemas/notes"
 import styles from "./NoteListItem.module.css"
+import type { Notes } from "@/schemas/notes"
 
 interface NoteListItemProps {
   note: Notes

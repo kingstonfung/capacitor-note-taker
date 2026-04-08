@@ -1,6 +1,7 @@
 import { describe, it, expect, vi, beforeEach } from "vitest"
 import { render, screen, act } from "@testing-library/react"
 import { ToastProvider, useToast } from "./ToastContext"
+import { PENDING_TOAST_KEY } from "@/constants/pendingToastKey"
 
 vi.mock("@/components/Toast/Toast", () => ({
   Toast: ({
@@ -17,8 +18,6 @@ vi.mock("@/components/Toast/Toast", () => ({
     </div>
   ),
 }))
-
-const PENDING_TOAST_KEY = "pendingToast"
 
 const TestConsumer = ({
   onRender,

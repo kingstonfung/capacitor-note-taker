@@ -1,10 +1,9 @@
 import { useMemo } from "react"
 import { z } from "zod"
 import { NotesSchema } from "@/schemas/notes"
-import type { Notes } from "@/schemas/notes"
 import { NOTES_STORAGE_KEY } from "@/constants/storage"
-
-const MIN_QUERY_LENGTH = 3
+import type { Notes } from "@/schemas/notes"
+import { MIN_QUERY_LENGTH } from "@/constants/search"
 
 const loadAllNotes = (): Notes[] => {
   const stored = localStorage.getItem(NOTES_STORAGE_KEY)

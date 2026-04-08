@@ -33,7 +33,7 @@ describe("useNotesFormSubmit hook:", () => {
 
   it("appends to an existing notes array in localStorage", () => {
     const existingNote = {
-      id: "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      id: "53d55b2d-b204-4dfa-b301-1764ed4665e8",
       title: "Existing Note",
     }
     localStorage.setItem("notes", JSON.stringify([existingNote]))

@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, afterEach } from "vitest"
-import { formatTimestamp, getCurrentTimestamp } from "./index"
+import { formatTimestamp, getCurrentTimestamp } from "./timestamp"
 
 describe("formatTimestamp:", () => {
   it("formats a date with a single-digit day and no leading zero", () => {

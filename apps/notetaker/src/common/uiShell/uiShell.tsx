@@ -3,7 +3,7 @@ import { Outlet } from "@tanstack/react-router"
 
 import styles from "./styles.module.css"
 import { Header } from "../Header/Header"
-import { Search } from "@/features/search"
+import { Search } from "@/features/search/Search"
 import { ConfirmDeleteModal } from "@/components/ConfirmDeleteModal/ConfirmDeleteModal"
 import { delteAllNotes } from "./utils/deleteAllNotes"
 import { useToast } from "@/common/toast/ToastContext"

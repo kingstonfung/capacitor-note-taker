@@ -1,8 +1,8 @@
 import { Link, useNavigate } from "@tanstack/react-router"
-import type { Notes } from "@/schemas/notes"
 import { NOTES_STORAGE_KEY } from "@/constants/storage"
 import { AudioPlayer } from "@/common/audioPlayer/AudioPlayer"
 import { useToast } from "@/common/toast/ToastContext"
+import type { Notes } from "@/schemas/notes"
 
 import styles from "./NoteView.module.css"
 

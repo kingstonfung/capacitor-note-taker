@@ -5,6 +5,7 @@ import { useRecorderMethods } from "./useRecorderMethods"
 const mockStartRecording = vi.fn()
 const mockStopRecording = vi.fn()
 const mockDeleteRecording = vi.fn()
+const TEST_UUID = "3b78d809-c82e-495d-a6c5-89a9f151b674"
 
 vi.mock("../utils/audioRecorderUtils", () => ({
   startRecording: (...args: unknown[]) => mockStartRecording(...args),
@@ -14,8 +15,6 @@ vi.mock("../utils/audioRecorderUtils", () => ({
 vi.mock("@/common/voiceMemoDB/utils/deleteRecording", () => ({
   deleteRecording: (...args: unknown[]) => mockDeleteRecording(...args),
 }))
-
-const TEST_UUID = "3b78d809-c82e-495d-a6c5-89a9f151b674"
 
 describe("useRecorderMethods hook:", () => {
   beforeEach(() => {

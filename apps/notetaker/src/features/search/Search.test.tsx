@@ -2,8 +2,6 @@ import { describe, it, expect, vi, beforeEach } from "vitest"
 import { render, screen, fireEvent } from "@testing-library/react"
 import { Search } from "./Search"
 
-vi.mock("@/assets/icons/close.svg", () => ({ default: "" }))
-
 vi.mock("@/components/NoteListItem/NoteListItem", () => ({
   NoteListItem: ({ note }: { note: { id: string; title: string } }) => (
     <div data-testid="note-list-item">{note.title}</div>

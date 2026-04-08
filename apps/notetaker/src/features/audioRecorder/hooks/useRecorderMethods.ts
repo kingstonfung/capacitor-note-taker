@@ -24,7 +24,6 @@ export const useRecorderMethods = ({
     setRecordingId(id)
     setRecordingState("done")
     onRecordingComplete?.(id)
-    // Resolve any pending stopAndAwait promise
     if (stopResolverRef.current) {
       stopResolverRef.current()
       stopResolverRef.current = null
